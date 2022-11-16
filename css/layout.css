@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.15;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0;
+}
+
+.banner {
+  margin: 0px 15px 25px 15px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.siren {
+  animation: flash 2s forwards alternate infinite;
+  border-radius: 3px;
+}
+@keyframes flash {
+  100% {
+    background: red;
+  }
+}
+.box {
+  max-width: 280px;
+}
+.company-logo {
+  display: inline;
+}
+.logo {
+  margin-top: 15px;
+  content: url(../images/district_logo.png);
+  width: 135px;
+  height: 135px;
+  background-color: white;
+  border-radius: 100%;
+  border: solid 10px white;
+}
+#logo-and-shift-wrap {
+  display: inline-flex;
+}
+#shift-container {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+#shift-container > h3 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+#letters > span {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px;
+  filter: blur(2px);
+}
+.active {
+  font-size: 20px !important;
+  font-weight: 700;
+  border-radius: 100%;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  background: white;
+  filter: blur(0px) !important;
+}
+.shift-a {
+  background-color: rgba(181, 27, 27);
+}
+.shift-b {
+  background-color: rgba(7, 66, 156);
+}
+.shift-c {
+  background-color: rgba(25, 135, 84);
+}
+#time-and-weather-wrap {
+  float: right;
+}
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#icon0 img {
+  width: 65px;
+  height: 65px;
+}
+#clock {
+  font-size: 42px;
+  text-align: center;
+  display: block;
+}
+#date {
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+.temperature-container .temperature {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: '. . .';
+  max-height: 65px;
+}
+#degree-symbol {
+  vertical-align: super;
+  font-size: 22px;
+}
+#f {
+  font-size: 12px;
+  vertical-align: super;
+}
+.max-min-temperature span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 5px;
+  top: 0;
+}
+span#temperature {
+  font-size: 42px;
+  text-align: center;
+}
+.description {
+  text-align: center;
+  font-size: 18px;
+  margin-top: -15px;
+  text-transform: capitalize;
+  max-width: 280px;
+  overflow-wrap: anywhere;
+}
+#live-dash-logo img {
+  position: fixed;
+  width: 200px;
+  right: 5px;
+  bottom: 5px;
+  content: url(../images/livedashlogo.png);
+}
+
+
+/* loading animation */
+
+.center {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide-element {
+  display: none;
+}

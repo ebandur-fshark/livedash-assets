@@ -41,7 +41,7 @@ h6 {
 }
 .logo {
   margin-top: 15px;
-  content: url(../images/district_logo.png);
+  content: url('/images/district_logo.png');
   width: 135px;
   height: 135px;
   background-color: white;

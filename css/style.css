@@ -1,0 +1,568 @@
+#landing {
+  background-image: url('/images/_background_images/firestation-blue-med.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#announcements {
+  background-image: url('/images/_background_images/bg_image_1-min.jpg');
+  /* object-fit: cover; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#chiefmsg {
+  background-image: url('/images/_background_images/bg_image_8-min.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#admin-message {
+  background-image: url('/images/_background_images/bg_image_1-min.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#roster {
+  background-image: url('/images/_background_images/bg_image_2-min.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#emergency {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/images/_background_images/test.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#social-media {
+  background-image: url('/images/_background_images/firestation-blue-med.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#training {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000;
+}
+#weatherForecast {
+  background-image: url('/images/_background_images/weather-splash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000;
+}
+
+/* DAILY MESSAGE */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 100px auto;
+  justify-content: center;
+}
+.message-title {
+  font-size: 32px;
+}
+.pic {
+  margin: 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+}
+.person-container {
+  background-color: var(--background-color-opaque);
+  padding: 15px 30px;
+  margin-bottom: 10px;
+}
+.person-container span {
+  display: block;
+}
+.person-name {
+  font-size: 32px;
+  font-weight: 700;
+}
+.person-title {
+  font-size: 20px;
+  font-style: italic;
+}
+.message-content {
+  background-color: var(--background-color-opaque);
+  padding: 0px 30px;
+  font-size: 24px;
+  min-width: 900px;
+  white-space: pre-line;
+}
+.left-align {
+  text-align: left !important;
+}
+.right-align {
+  text-align: right !important;
+}
+/* ANNOUNCEMENTS.HTML */
+.announcement-wrapper {
+  display: flex;
+  margin-right: 15px;
+  justify-content: center;
+}
+/* Equipment Status */
+.bg-box {
+  margin-left: 15px;
+  padding: 0px 10px;
+  border: 1px solid black;
+  background-color: var(--background-color-opaque);
+  text-align: center;
+}
+
+.equipment-status,
+.building-maintenance {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+.equipment-sheet-data,
+.building-maintenance-sheet-data {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  max-height: 840px;
+  width: auto;
+  align-content: flex-start;
+  writing-mode: vertical-lr;
+}
+.equipment-in-service,
+.maintenance-item {
+  width: 300px;
+  writing-mode: horizontal-tb;
+}
+.hydrants-oos,
+.road-closures {
+  margin-right: auto;
+  width: 300px;
+}
+.empty-array {
+  writing-mode: horizontal-tb;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+/* CHIEF MESSAGE BOARD */
+.message-board {
+  width: 300px;
+}
+.chief-message {
+  margin-bottom: 15px;
+}
+/* Hydrant OOS */
+/* Building Maintenance */
+/* Road Closures */
+/* Generic Styling on Box */
+.bg-box p {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+.bg-box hr {
+  margin: auto;
+  margin-bottom: 13px;
+  opacity: 0.25;
+  color: inherit;
+  background-color: currentColor;
+  height: 2px;
+  border: 0;
+  max-width: 250px;
+}
+.bg-box .date {
+}
+.bg-box .equip-desc {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.bg-box .resp-party {
+  padding-bottom: 10px;
+}
+.bg-box .job-status {
+  padding-bottom: 15px;
+}
+.bg-box .address {
+  font-size: 24px;
+  font-weight: bold;
+}
+.bg-box .desc {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.bg-box .message-desc {
+  padding-bottom: 10px;
+}
+.bg-box .message-name {
+  padding-bottom: 10px;
+}
+.bg-box .eta {
+  padding-bottom: 10px;
+}
+.blue {
+  color: var(--date-time);
+}
+.yellow {
+  color: var(--yellow);
+}
+.red {
+  color: var(--primary-color);
+}
+.orange {
+  color: var(--orange);
+}
+.green {
+  color: var(--tertiary-color);
+}
+.bold-text {
+  font-weight: 700;
+}
+.bg-box a {
+  color: inherit;
+}
+
+/* NOTES.HTML */
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.title-wrapper h3 {
+  font-size: 52px;
+  margin-bottom: 5px;
+}
+.calendar-wrapper .note-box {
+  padding-top: 10px;
+  max-width: 350px;
+  min-width: 200px;
+}
+.note-box .note-date {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.note-box .note-desc {
+  font-size: 22px;
+}
+/* CALENDAR.HTML */
+.calendar-wrapper {
+  display: flex;
+  margin-right: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.station-cal {
+  flex: 1;
+}
+.bg-box .cal-time {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bg-box .cal-summary {
+  font-size: 18px;
+  font-weight: 700;
+}
+.bg-box .cal-location {
+  font-size: 16px;
+  font-weight: 700;
+}
+.bg-box .cal-desc {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+/* Roster */
+.shift-wrapper {
+  display: flex;
+  margin-top: 25px;
+}
+.shift-header {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 2px;
+  text-align: center;
+}
+.table {
+  text-align: center;
+  vertical-align: middle;
+}
+.table th {
+  font-size: 22px;
+}
+.table > :not(caption) > * > * {
+  padding: 0.35rem 0.35rem;
+}
+.table td {
+  font-size: 18px;
+}
+.table tr {
+  line-height: 0.75rem !important;
+}
+.current-shift-container {
+  margin-right: 10px;
+  width: 100%;
+}
+.tomorrow-shift-container {
+  width: 100%;
+}
+
+.a-shift-header {
+  background-color: var(--primary-color);
+}
+.b-shift-header {
+  background-color: var(--secondary-color);
+}
+.c-shift-header {
+  background-color: var(--tertiary-color);
+}
+.table {
+  color: var(--quaternary-color);
+}
+
+/* A Shift Color */
+.table-danger {
+  --bs-table-bg: var(--primary-color-opaque);
+}
+/* B Shift Color */
+.table-primary {
+  --bs-table-bg: var(--secondary-color-opaque);
+}
+/* C Shift Color */
+.table-success {
+  --bs-table-bg: var(--tertiary-color-opaque);
+}
+.unit-group {
+  --bs-table-accent-bg: rgba(0, 0, 0, 0.8) !important;
+}
+/* Active911 */
+
+.activecall-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.activecall-wrapper > div {
+  flex: 50%;
+}
+.activecall-wrapper :nth-child(1) {
+  order: 1;
+}
+.activecall-wrapper :nth-child(2) {
+  order: 3;
+}
+.activecall-wrapper :nth-child(3) {
+  order: 2;
+}
+.activecall-wrapper :nth-child(4) {
+  order: 4;
+}
+.call-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.call-content .bg-box {
+  padding: 25px;
+}
+.call-title {
+  font-size: 26px;
+}
+.call-content span {
+  display: block;
+}
+#add-alert-form {
+  min-width: 500px;
+}
+#timer {
+  font-size: 8rem !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li span:nth-child(2) {
+  margin-top: 6px;
+}
+.travel-info {
+  font-size: 32px;
+  text-align: center;
+}
+.travel-info > span {
+  font-weight: bold;
+}
+#distance > span,
+#duration > span {
+  color: var(--yellow);
+  font-size: 42px;
+}
+/* Social Media */
+.social-media-wrapper {
+  display: flex;
+}
+/* TRAINING.HTML */
+
+/* .overlay {
+  opacity: 0.8;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+} */
+.training-container {
+  margin-top: 25px;
+}
+/* SLIDES.HTML */
+.google-slide-container {
+  display: flex;
+}
+/* TRAFFICCAMS.HTML */
+.traffic-cam-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  background-color: gray;
+}
+.traffic-cam-container > div {
+  flex: 50%;
+}
+.video-js {
+  position: relative !important;
+  width: 100% !important;
+  height: 460px !important;
+  object-fit: fill;
+  padding: 0 !important;
+}
+.video-js .vjs-tech {
+  position: relative !important;
+  width: 100% !important;
+  height: 460px !important;
+  object-fit: fill;
+  padding: 0 !important;
+}
+/* RADAR.HTML */
+.weather-container {
+  display: flex;
+  justify-content: space-around;
+}
+.weather-container div span:nth-child(n + 2) {
+  display: block;
+}
+.weather-container h3 {
+  margin: 4px 10px;
+}
+.forecast-container {
+  padding: 20px;
+  margin-left: 20px;
+  height: 875px;
+}
+.day-of-week {
+  display: block;
+}
+.forecast-item {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.weather-append-current {
+  display: flex;
+}
+.radar-container {
+  flex: 1;
+  margin-right: 20px;
+}
+.weather-condition-container {
+  max-width: 200px;
+}
+.alert-container span {
+  max-width: 500px;
+  font-size: 13px;
+}
+
+
+/* ALERTS/ANNOUNCEMENTS */
+.alerts-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.alerts-wrapper > div {
+  width: 50%;
+}
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.alerts-section-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.alerts-section-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.alerts-wrapper .note-box {
+  padding-top: 10px;
+  width: 280px;
+}
+.alert-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* MESSAGES */
+.message-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.message-wrapper .section-wrapper:nth-child(odd) .message-item {
+  max-width: 1050px;
+}
+.section-wrapper:nth-child(even) .message-item {
+  max-width: 300px;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px !important;
+}
+.message-item .message-desc {
+  font-size: 20px;
+}
+.message-item .message-name {
+  font-size: 18px;
+}
+
+/* TAGS */
+.tag {
+  margin-top: auto;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-style: italic;
+  border: solid black 1px;
+  padding: 2px;
+  font-weight: 800;
+}
+.routine {
+  color: black;
+  background-color: var(--quaternary-color);
+}
+.moderate {
+  background-color: var(--orange);
+}
+.urgent {
+  background-color: var(--primary-color);
+}

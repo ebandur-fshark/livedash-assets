@@ -1,10 +1,26 @@
+:root {
+  --primary-color-opaque: rgba(181, 27, 27, 0.5);
+  --secondary-color-opaque: rgba(7, 66, 156, 0.5);
+  --tertiary-color-opaque: rgba(25, 135, 84, 0.5);
+  --quaternary-color-opaque: rgba(255, 255, 255, 0.5);
+  --bs-table-accent-bg: rgba(0, 0, 0, 0.8);
+  --primary-color: rgba(181, 27, 27);
+  --secondary-color: rgba(7, 66, 156);
+  --tertiary-color: rgba(25, 135, 84);
+  --quaternary-color: rgba(255, 255, 255);
+  --date-time: #77aeef;
+  --orange: orange;
+  --yellow: rgb(240, 218, 23);
+  --background-color-opaque: rgba(255, 255, 255, 0.1);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 body {
   background-color: black;
-  color: white;
+  color: var(--quaternary-color);
   font-family: Montserrat, sans-serif;
   line-height: 1.15;
   font-size: 16px;
@@ -41,7 +57,7 @@ h6 {
 }
 .logo {
   margin-top: 15px;
-  /* content: url(/images/district_logo.png); */
+  content: url(../images/district_logo.png);
   width: 135px;
   height: 135px;
   background-color: white;

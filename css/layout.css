@@ -163,7 +163,7 @@ span#temperature {
   width: 200px;
   right: 5px;
   bottom: 5px;
-  content: url(../images/livedashlogo.png);
+  /* content: url(../images/livedashlogo.png); */
 }
 
 

@@ -46,7 +46,7 @@ h6 {
 }
 @keyframes flash {
   100% {
-    background: red;
+    background: var(--primary-color);
   }
 }
 .box {
@@ -60,46 +60,51 @@ h6 {
   content: url(../images/district_logo.png);
   width: 135px;
   height: 135px;
-  background-color: white;
+  background-color: var(--quaternary-color);
   border-radius: 100%;
-  border: solid 10px white;
+  border: solid 10px var(--quaternary-color);
 }
 #logo-and-shift-wrap {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #shift-container {
-  margin-top: 50px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
 }
 #shift-container > h3 {
-  font-size: 14px;
+  font-size: 24px;
   text-align: center;
-  font-weight: 700;
   padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 #letters > span {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
   padding: 8px;
-  filter: blur(2px);
+  filter: blur(3px);
 }
 .active {
-  font-size: 20px !important;
+  font-size: 38px !important;
   font-weight: 700;
-  border-radius: 100%;
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-  background: white;
+  border-radius: 50%;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  background: var(--quaternary-color);
   filter: blur(0px) !important;
 }
 .shift-a {
-  background-color: rgba(181, 27, 27);
+  background-color: var(--primary-color);
 }
 .shift-b {
-  background-color: rgba(7, 66, 156);
+  background-color: var(--secondary-color);
 }
 .shift-c {
-  background-color: rgba(25, 135, 84);
+  background-color: var(--tertiary-color);
 }
 #time-and-weather-wrap {
   float: right;
@@ -124,31 +129,35 @@ div#icon0 img {
   display: block;
   margin-bottom: 5px;
 }
-.temperature-container .temperature {
+/* .temperature-container .temperature {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: '. . .';
   max-height: 65px;
+} */
+.temperature {
+  display: flex;
+  /* align-items: baseline; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
 }
 #degree-symbol {
   vertical-align: super;
   font-size: 22px;
 }
-#f {
-  font-size: 12px;
-  vertical-align: super;
-}
-.max-min-temperature span {
+
+.max-min-temperature {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: baseline; */
   font-size: 16px;
   margin-left: 5px;
-  top: 0;
 }
 span#temperature {
   font-size: 42px;
-  text-align: center;
+  /* text-align: center; */
 }
 .description {
   text-align: center;

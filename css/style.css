@@ -1,43 +1,43 @@
 #landing {
-  background-image: url('/images/_background_images/firestation-blue-med.png');
+  /* background-image: url('/images/_background_images/firestation-blue-med.png'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #announcements {
-  background-image: url('/images/_background_images/bg_image_1-min.jpg');
+  /* background-image: url('/images/_background_images/bg_image_1-min.jpg'); */
   /* object-fit: cover; */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 #chiefmsg {
-  background-image: url('/images/_background_images/bg_image_8-min.jpg');
+  /* background-image: url('/images/_background_images/bg_image_8-min.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #admin-message {
-  background-image: url('/images/_background_images/bg_image_1-min.jpg');
+  /* background-image: url('/images/_background_images/bg_image_1-min.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #roster {
-  background-image: url('/images/_background_images/bg_image_2-min.jpg');
+  /* background-image: url('/images/_background_images/bg_image_2-min.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #emergency {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/images/_background_images/test.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    /* url('/images/_background_images/test.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #social-media {
-  background-image: url('/images/_background_images/firestation-blue-med.png');
+  /* background-image: url('/images/_background_images/firestation-blue-med.png'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -49,7 +49,7 @@
   background-color: #000;
 }
 #weatherForecast {
-  background-image: url('/images/_background_images/weather-splash.jpg');
+  /* background-image: url('/images/_background_images/weather-splash.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -565,4 +565,27 @@ li span:nth-child(2) {
 }
 .urgent {
   background-color: var(--primary-color);
+}
+
+
+/* LANDING.html */
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.hero-content #logo-content img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 50px;
+  background-color: white;
+  border-radius: 100%;
+  border: solid 15px white;
+}
+
+#company-name {
+  font-size: 28px;
 }

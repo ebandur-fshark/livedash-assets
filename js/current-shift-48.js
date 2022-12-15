@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 function setCurrentShiftColor(shiftNumber) {
   const shiftColor = ["a", "a", "c", "c", "b", "b"][shiftNumber];
 
@@ -11,7 +9,7 @@ function setActiveBox() {
   const today = new Date();
   const now = today.getTime();
 
-  const countDownDate = new Date(process.env.COUNTDOWN_DATETIME).getTime();
+  const countDownDate = new Date(COUNTDOWN_DATETIME).getTime();
   const timeLeft = countDownDate - now;
 
   const daysLeftOver = Math.floor(timeLeft / (1000 * 60 * 60 * 24) % 6);

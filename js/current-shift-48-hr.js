@@ -1,3 +1,5 @@
+const COUNTDOWN_DATETIME="December 26, 9999 06:00:00";
+
 function setCurrentShiftColor(shiftNumber) {
   const shiftColor = ["a", "a", "c", "c", "b", "b"][shiftNumber];
 

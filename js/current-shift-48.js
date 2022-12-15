@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 function setCurrentShiftColor(shiftNumber) {
   const shiftColor = ["a", "a", "c", "c", "b", "b"][shiftNumber];
 

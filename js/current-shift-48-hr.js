@@ -1,5 +1,3 @@
-const COUNTDOWN_DATETIME="December 26, 9999 06:00:00";
-
 function setCurrentShiftColor(shiftNumber) {
   const shiftColor = ["a", "a", "c", "c", "b", "b"][shiftNumber];
 
@@ -15,7 +13,6 @@ function setActiveBox() {
   const timeLeft = countDownDate - now;
 
   const daysLeftOver = Math.floor(timeLeft / (1000 * 60 * 60 * 24) % 6);
-  console.log(daysLeftOver);
   setCurrentShiftColor(daysLeftOver);
 
 }
